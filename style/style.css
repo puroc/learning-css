@@ -44,5 +44,13 @@ r       g        b
 
 /* 单位 
 1、em：如2em，2倍的文字front-size
+2、px
 
 */
+
+/* 1、行级元素：内容决定元素所占位置，不可以通过css改变宽高，如span、storng、em、a、del
+
+
+2、块级元素：独占一行，可以通过css改变宽高，如div、p、ul、li、ol、form、address
+
+3、行级块元素：内容决定大小，可以改宽高，如img*/

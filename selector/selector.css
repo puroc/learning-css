@@ -56,3 +56,9 @@ em,strong{
     background-color: dimgray;
 }
 
+/* 伪类选择器 ，鼠标经过时才显示对应的样式*/
+a:hover{
+    background-color: orange;
+    text-decoration: none;
+}
+
