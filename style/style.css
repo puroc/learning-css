@@ -1,15 +1,36 @@
-div{
+#a{
     font-size: 50px;
     font-weight: bold; /* 字体粗细 */
     font-style: italic; /* 斜体 */
     font-family: Arial; /* 乔布斯发明的字体 */
     color: rgb(255, 0, 0); /* 设置颜色 */
-    border: 1px dashed black; /* 设置外边框 */
+    /* color: transparent;设置颜色透明 */
+    border: 10px dashed black; /* 设置外边框 */
+    /* border-left-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-right-width: 1px; */
     width: 200px; /* 设置宽 */
     height: 200px; /* 设置高 */
-    /* color: transparent;设置颜色透明 */
-    
+}
 
+
+
+
+#b{
+    font-size: 16px;
+    width: 1000px;
+    height: 200px;
+    border: 1px solid black;
+    text-align: left;/* 对齐方式 */
+    line-height: 1.2em;/* 一行文字的高度，当他大于字体大小时，就能实现行间距的效果*/
+    /* line-height: 200px;当他的大小等于容器的大小(height:200px)时，就可以实现一行文字垂直居中的效果 */
+    text-indent: 2em;/* 文本缩进 */
+    text-decoration: underline;/* 下划线、删除线等 */
+    cursor: pointer;/* 鼠标悬浮时更改鼠标样式，pointer显示为小手图标 */
+    
+    
+    
 }
 
 /*
@@ -19,4 +40,9 @@ div{
 r       g        b
 00-ff  00-ff    00-ff
 3、颜色函数：
+*/
+
+/* 单位 
+1、em：如2em，2倍的文字front-size
+
 */
