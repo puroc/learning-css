@@ -1,0 +1,22 @@
+div{
+    font-size: 50px;
+    font-weight: bold; /* 字体粗细 */
+    font-style: italic; /* 斜体 */
+    font-family: Arial; /* 乔布斯发明的字体 */
+    color: rgb(255, 0, 0); /* 设置颜色 */
+    border: 1px dashed black; /* 设置外边框 */
+    width: 200px; /* 设置宽 */
+    height: 200px; /* 设置高 */
+    /* color: transparent;设置颜色透明 */
+    
+
+}
+
+/*
+定义颜色
+1、英文单词：red、blue、black，这种定义方式颜色不精准，开发时不建议使用
+2、颜色代码：
+r       g        b
+00-ff  00-ff    00-ff
+3、颜色函数：
+*/
