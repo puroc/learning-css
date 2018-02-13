@@ -1,3 +1,6 @@
+/* 样式优先级：important > 行间样式(1000) > id选择器(100) > class选择器(10) = 属性选择器(10) > 标签选择器(1) > 通配符选择器(0)，
+相同的样式定义将按照优先级最高的执行，优先级是按照选择器的权重来计算的，权重值高的优先级大，多个选择器的权重值相同时，后面的选择器样式生效*/
+
 /* id选择器 */
 #only{
     background-color:red;
@@ -24,7 +27,32 @@ div{
 }
 
 /* important覆盖所有样式 */
-span{
+h1{
     background-color: blue!important;
+}
+
+/* 父子选择器(父标签下的所有子标签，包括非直接子标签),可以通过标签或者类选择器来表示父子关系*/
+.a .b em{
+    background-color:forestgreen;
+}
+
+div em{
+    background-color: hotpink;
+}
+
+/* 直接子标签 */
+
+div > em{
+    background-color: gold;
+}
+
+/* 并列选择器(多种类型的选择器连接在一起写)*/
+div.demo2{
+    background-color: dodgerblue;
+}
+
+/* 分组选择器，多个选择器公用样式代码块，选择器用逗号分隔 */
+em,strong{
+    background-color: dimgray;
 }
 
