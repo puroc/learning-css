@@ -1,0 +1,128 @@
+/* 
+盒子模型：
+外边距：margin
+边框：border
+内边距：padding
+内容：element
+ */
+
+
+ .test{
+     background-color: red;
+     width: 100px;
+     height: 100px;
+     border: 10px solid black;
+     padding: 30px;
+     margin:40px;
+     /* 
+     padding和border可以分别声明四个方向的值
+     padding: 100px 30px 100px 30px;
+     padding: 100px 30px 200px;
+     padding-left: 10px;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     padding-right: 10px;
+     border-top-width: 1px;
+     border-left-width: 1px;
+     border-right-width: 1px;
+     border-bottom-width: 1px; 
+     */
+     
+ }
+
+ /* 
+ 层模型：
+ 1、当一个元素成为绝对定位的元素时，他就脱离了原来的层，跑到上面一个层里了，他原来的位置就可以被其他元素占用了 
+ 2、当一个元素成为相对定位的元素时，他原来的位置不会被其他元素占用了 
+ */
+ .location{
+     position: absolute;
+     left: 500px;/* 距离左边的距离 */
+     top: 100px;/* 距离顶端的距离 */
+ }
+
+ .location2{
+    position: absolute;
+    left: 550px;/* 距离左边的距离 */
+    top: 150px;/* 距离顶端的距离 */
+}
+
+.location3{
+    position: relative;
+    left: 1000px;/* 距离左边的距离 */
+    top: 500px;/* 距离顶端的距离 */
+}
+
+.location4{
+    position: relative;
+    left: 1050px;/* 距离左边的距离 */
+    top: 550px;/* 距离顶端的距离 */
+}
+
+
+    /* position属性
+    1、absolute：相对于最近的有定位的父级进行定位，如果没有，则相对于文档进行定位
+    2、relative：相对于自己原来的位置进行定位，通常用relative搭建页面骨架，用absolute进行元素定位
+    3、fix：
+    */
+
+    /* -----------------absolute定位----------------- */
+/* .wrapper{
+    position: relative;
+    margin-left: 100px;
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+}
+
+.content{
+    margin-left: 100px;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+
+.box{
+    position: absolute;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+} */
+
+/* -----------------relative定位----------------- */
+.wrapper{
+    position: relative;
+    margin-left: 100px;
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+}
+
+.content{
+    
+    margin-left: 100px;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+
+.box{
+    position: relative;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+}
+
+/* -----------------fixed定位----------------- */
+.location5{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin-left: -50px;
+    margin-top: -50px;
+}
