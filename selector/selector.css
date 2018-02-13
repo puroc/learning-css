@@ -4,12 +4,27 @@
 }
 
 /* class选择器 */
-.demo{
-    color: white;
+.demo{    
     background-color: blue;
+}
+
+/* 属性选择器，他的优先级与class选择器相同，谁写在css文件的后面谁生效*/
+[name]{
+    background-color: gold;
 }
 
 /* 标签选择器 */
 div{
     background-color: black;
 }
+
+/* 通配符选择器，匹配页内所有标签，包括header、body*/
+*{
+    background-color: rgb(20, 181, 255);
+}
+
+/* important覆盖所有样式 */
+span{
+    background-color: blue!important;
+}
+

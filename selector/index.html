@@ -10,15 +10,26 @@
 </head>
 
 <body>
-    <!-- 选择器样式优先级：id选择器 > class选择器 > 标签选择器 ，相同的样式定义将按照优先级最高的执行-->
+    <!-- 样式优先级：important > 行间样式(1000) > id选择器(100) > class选择器(10) = 属性选择器(10) > 标签选择器(1) > 通配符选择器(0)，
+        相同的样式定义将按照优先级最高的执行-->
+
+    <!-- 行间样式 -->
+    <div style="background-color: darkgreen">000</div>
+
     <!-- id选择器 -->
-    <div id="only" class="demo">123</div>
+    <div id="only">123</div>
 
     <!-- class选择器     -->
     <div class="demo">456</div>
 
+     <!-- 属性选择器 -->
+     <div name="xiaoming">999</div>
+
     <!-- 标签选择器 -->
     <div>789</div>
+    
+    <span id="only">啦啦啦</span>
+
 </body>
 
 </html>
