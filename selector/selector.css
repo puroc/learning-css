@@ -1,6 +1,15 @@
+/* id选择器 */
 #only{
-    background-color:brown;
+    background-color:red;
 }
-#only1{
-    background-color:blue;
+
+/* class选择器 */
+.demo{
+    color: white;
+    background-color: blue;
+}
+
+/* 标签选择器 */
+div{
+    background-color: black;
 }
