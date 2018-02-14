@@ -1,0 +1,44 @@
+.wrapper{
+    width: 400px;
+    height: 300px;
+    border:1px solid black;
+    background-color: white;
+}
+.content{
+    color: white;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    float: left;
+    text-align: center;
+    line-height: 100px;
+}
+
+p{
+    margin: 0px;
+    border:1px solid black;
+    clear: both;/* 清除左右两侧的浮动效果 */
+    
+}
+
+
+/* 
+1、浮动元素产生了浮动流
+所有产生浮动流的元素，块级元素看不到他们（会被浮动元素遮挡），bfc元素、文本类元素（inline）和文本都能看到浮动元素（即不会被浮动元素遮挡）
+
+*/
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    opacity: 50%;
+    float: left;
+}
+
+.demo{
+    width: 200px;
+    height: 200px;
+    background-color:green;
+    /* float: left; */
+}
