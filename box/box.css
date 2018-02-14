@@ -126,3 +126,29 @@
     margin-left: -50px;
     margin-top: -50px;
 }
+
+/* 
+margin塌陷问题：
+将父容器变为bfc来解决这个问题，如何将父容器变为bfc，有以下几种方式：
+1、overflow: hidden; 
+2、position: absolute;
+3、display: inline-block;
+4、float: left/right;
+*/
+
+.x{
+    margin-left: 100px;
+    margin-top: 100px;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    overflow: hidden;
+}
+
+.y{
+    margin-left: 50px;
+    margin-top: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+}
